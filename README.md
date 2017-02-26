@@ -2,6 +2,9 @@
 Virtuoso 7.2 Compiled as DEB Packages
 
 ## Installation script
+```bash
+virtuoso_user='virtuoso'
+virtuoso_group='virtuoso'
 
 echo "Installing Virtuoso 7.2.4 from .deb @feup-infolab/virtuoso7-debs."
 
@@ -23,3 +26,4 @@ sudo addgroup $virtuoso_group
 sudo usermod $virtuoso_user -g $virtuoso_group
 echo "${virtuoso_user}:${virtuoso_user_password}" | sudo chpasswd
 sudo chown -R $virtuoso_user:$virtuoso_group /usr/local/virtuoso-opensource
+```
