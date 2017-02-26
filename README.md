@@ -29,6 +29,7 @@ sudo chown -R $virtuoso_user:$virtuoso_group /usr/local/virtuoso-opensource
 ```
 ##Install systemd (run as Service)
 
+```bash
 virtuoso_startup_item_file="/var/systemd/system/virtuoso.service"
 
 #set virtuoso startup service
@@ -60,3 +61,4 @@ sudo systemctl daemon-reload
 sudo systemctl enable virtuoso
 sudo systemctl unmask virtuoso
 sudo systemctl start virtuoso
+```
