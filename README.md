@@ -27,7 +27,7 @@ sudo usermod $virtuoso_user -g $virtuoso_group
 echo "${virtuoso_user}:${virtuoso_user_password}" | sudo chpasswd
 sudo chown -R $virtuoso_user:$virtuoso_group /usr/local/virtuoso-opensource
 ```
-##Install systemd (run as Service)
+## Install systemd (run as Service)
 
 ```bash
 virtuoso_startup_item_file="/var/systemd/system/virtuoso.service"
