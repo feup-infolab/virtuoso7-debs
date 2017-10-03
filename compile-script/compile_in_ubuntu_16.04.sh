@@ -32,6 +32,7 @@ fi
 
 sudo rm -rf "$CHECKOUT_FOLDER"
 sudo git clone https://github.com/openlink/virtuoso-opensource.git "$CHECKOUT_FOLDER"  &&
+cd "$CHECKOUT_FOLDER" &&
 sudo ./autogen.sh &&
 CFLAGS="-O2 -m64" &&
 export CFLAGS &&
